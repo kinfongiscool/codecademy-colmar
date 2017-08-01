@@ -23,10 +23,8 @@ span {
 }
 
 .container {
-  /*width: 1200px;*/
   width: 100%;
   margin: auto;
-  /*border: 1px solid #a7a7a7*/
 }
 
 @media only screen and (min-width: 1200px) {
@@ -40,7 +38,6 @@ header {
   height: 3.2rem;
   z-index: 1;
   display: flex;
-  /*position: fixed;*/
   align-items: center;
   justify-content: center;
 }
@@ -73,10 +70,16 @@ header nav {
 
 header nav a {
   margin-left: 0.8rem;
-  color: #4A4A4A
+  color: #4A4A4A;
+  font-size: .9rem;
   font-style: normal;
   text-decoration: none;
   color: black;
+  transition: all 150ms ease-in 30ms;
+}
+
+header nav a:hover {
+  color: #588cdb;
 }
 
 
@@ -89,19 +92,18 @@ header nav a {
 .top-banner-container {
   display: flex;
   align-items: center;
-  /*this padding needs to go somewhere else, because it's impacting the size of the img*/
-  padding: 1.6rem 1.2rem;
   background-color: #D8D8D8;
 }
 
 .top-banner-container img {
   width: 60%;
   height: auto;
+  padding: 1.6rem 0 1.6rem 1.2rem;
 }
 
 .top-banner-content {
   padding-left: 2rem;
-  padding-right: 4.4rem;
+  padding-right: 2rem;
 }
 
 .top-banner-content h2 {
@@ -112,13 +114,19 @@ header nav a {
   padding: 0.8rem;
   text-align: center;
   color: white;
-  background-color: #4A4A4A
+  background-color: #4A4A4A;
+  transition: all 150ms ease-in 30ms;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top-banner-container p:hover {
+  background-color: #363636;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 .middle-content-container {
   display: flex;
-  /*align-items: center;*/
   background-color: #f3f5f5
 }
 
@@ -154,12 +162,12 @@ header nav a {
   display: flex;
   flex-direction: row;
   border-left: 1px solid #D8D8D8;
-  transition: background-color 150ms ease-in 30ms;
+  transition: all 150ms ease-in 30ms;
   line-height: 1.2rem;
 }
 
 .middle-content-side-item:hover {
-  background-color: #D8D8D8
+  background-color: #D8D8D8;
 }
 
 .middle-content-side-item-image {
@@ -204,7 +212,12 @@ header nav a {
 
 .middle-content-side-item-read-more {
   margin-bottom: .8rem;
-  color: #588cdb
+  color: #588cdb;
+  transition: all 150ms ease-in 30ms;
+}
+
+.middle-content-side-item-read-more:hover {
+  color: #4a4a4a;
 }
 
 
@@ -230,11 +243,13 @@ header nav a {
   margin: 0 .8rem .8rem .8rem;
   background-color: white;
   line-height: 1.2rem;
-  transition: background-color 150ms ease-in 30ms;
+  transition: all 150ms ease-in 30ms;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 .start-learning-item:hover {
-  background-color: #D8D8D8
+  background-color: #D8D8D8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .start-learning-item img {
@@ -305,7 +320,7 @@ video {
   align-items: center;
   flex-direction: row;
   border-left: 1px solid #D8D8D8;
-  transition: background-color 150ms ease-in 30ms;
+  transition: all 150ms ease-in 30ms;
 }
 
 .thesis-side-item:hover {
@@ -348,15 +363,3 @@ footer nav {
 footer nav a {
   margin-left: 0.8rem;
 }
-
-/*#orientation-image {
-  content: url('../resources/images/information-orientation.jpg');
-}
-
-#campus-image {
-  content: url('../resources/images/information-campus.jpg');
-}
-
-#lecture-image {
-  content: url('../resources/images/information-guest-lecture.jpg');
-}*/
