@@ -1,0 +1,161 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Asap', sans-serif;
+  color: #4A4A4A;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4A4A4A;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 3.2rem;
+  z-index: 1;
+  display: flex;
+  /*position: fixed;*/
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 1.8rem;
+  height: 100%;
+  margin-left: 1.2rem;
+  padding-right: 0.1rem;
+}
+
+header .logo-text {
+  font-size: 1.2rem;
+  color: #9B9B9B;
+}
+
+header strong {
+  font-weight: bold;
+  color: #4A4A4A;
+}
+
+header nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  text-align: right;
+  margin-right: 1.2rem;
+}
+
+header nav a {
+  margin-left: 0.8rem;
+  color: #4A4A4A
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  top: 64px;
+  width: 100%;
+  margin: auto;
+}
+
+.top-banner-container {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 1.2rem;
+  background-color: #D8D8D8;
+}
+
+.top-banner-container img {
+  width: 60%;
+  height: auto;
+}
+
+.top-banner-content {
+  padding-left: 2rem;
+  padding-right: 4.4rem;
+}
+
+.top-banner-content h2 {
+  padding: 1.6rem 0;
+}
+
+.top-banner-content p {
+  padding: 0.8rem;
+  text-align: center;
+  color: white;
+  background-color: #4A4A4A
+}
+
+.middle-content-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.middle-content-main-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.middle-content-main-container {
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1.6rem 1.2rem;
+}
+
+.middle-content-main-container img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 1.5rem;
+}
+
+.middle-content-main-container p {
+  padding: 1.2rem 0 1.6rem 0;
+  line-height: 1.4rem;
+  opacity: 0.9;
+}
+
+.middle-content-side-container {
+  width: 21rem;
+  padding: .8rem;
+}
+
+.middle-content-side-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.middle-content-side-item-image {
+  width: 35%;
+  height: auto;
+}
+
+#orientation-image {
+  background-image: url('Colmar/resources/images/information-orientation.jpg');
+}
+
+#campus-image {
+  content: url('Colmar/resources/images/information-campus.jpg');
+}
+
+#lecture-image {
+  content: url('Colmar/resources/images/information-guest-lecture.jpg');
+}
