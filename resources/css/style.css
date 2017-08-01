@@ -1,0 +1,362 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #4A4A4A;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4A4A4A;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+span {
+  font-size: 0.9rem;
+}
+
+.container {
+  /*width: 1200px;*/
+  width: 100%;
+  margin: auto;
+  /*border: 1px solid #a7a7a7*/
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+header {
+  width: 100%;
+  height: 3.2rem;
+  z-index: 1;
+  display: flex;
+  /*position: fixed;*/
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 1.8rem;
+  height: 100%;
+  margin-left: 1.2rem;
+  padding-right: 0.1rem;
+}
+
+header .logo-text {
+  font-size: 1.2rem;
+  color: #9B9B9B;
+}
+
+header strong {
+  font-weight: bold;
+  color: #4A4A4A;
+}
+
+header nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  text-align: right;
+  margin-right: 1.2rem;
+}
+
+header nav a {
+  margin-left: 0.8rem;
+  color: #4A4A4A
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+
+.main {
+  top: 64px;
+  width: 100%;
+  margin: auto;
+}
+
+.top-banner-container {
+  display: flex;
+  align-items: center;
+  /*this padding needs to go somewhere else, because it's impacting the size of the img*/
+  padding: 1.6rem 1.2rem;
+  background-color: #D8D8D8;
+}
+
+.top-banner-container img {
+  width: 60%;
+  height: auto;
+}
+
+.top-banner-content {
+  padding-left: 2rem;
+  padding-right: 4.4rem;
+}
+
+.top-banner-content h2 {
+  padding: 1.6rem 0;
+}
+
+.top-banner-content p {
+  padding: 0.8rem;
+  text-align: center;
+  color: white;
+  background-color: #4A4A4A
+}
+
+
+.middle-content-container {
+  display: flex;
+  /*align-items: center;*/
+  background-color: #f3f5f5
+}
+
+.middle-content-main-container {
+  width: 60%;
+  padding: 1.6rem 0 1.6rem 1.2rem;
+}
+
+.middle-content-main-container img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 1.5rem;
+}
+
+.middle-content-main-container p {
+  padding: 1.2rem 0 1.6rem 0;
+  opacity: 0.9;
+  line-height: 1.4rem;
+}
+
+.middle-content-side-container {
+  width: 21rem;
+  padding-top: .8rem;
+  margin-left: .8rem;
+  float: right;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.middle-content-side-item {
+  display: flex;
+  flex-direction: row;
+  border-left: 1px solid #D8D8D8;
+  transition: background-color 150ms ease-in 30ms;
+  line-height: 1.2rem;
+}
+
+.middle-content-side-item:hover {
+  background-color: #D8D8D8
+}
+
+.middle-content-side-item-image {
+  width: 35%;
+  margin: .8rem;
+}
+
+.normal-image {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  height: auto;
+}
+
+.mobile-image {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .normal-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+}
+
+.middle-content-side-item-text {
+  width: 55%;
+  padding-top: 1.2rem;
+}
+
+.middle-content-side-item-text .content-item-title {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.middle-content-side-item-text .content-item-content {
+  font-size: .9rem;
+}
+
+.middle-content-side-item-read-more {
+  margin-bottom: .8rem;
+  color: #588cdb
+}
+
+
+.start-learning-container {
+  text-align: center;
+  background: #eaebec;
+}
+
+.start-learning-container h1 {
+  padding: 2.6rem 0rem;
+  margin: 0 auto;
+}
+
+.start-learning-item-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 1.8rem;
+}
+
+.start-learning-item {
+  width: 27%;
+  margin: 0 .8rem .8rem .8rem;
+  background-color: white;
+  line-height: 1.2rem;
+  transition: background-color 150ms ease-in 30ms;
+}
+
+.start-learning-item:hover {
+  background-color: #D8D8D8
+}
+
+.start-learning-item img {
+  width: 100%;
+}
+
+.start-learning-item-text {
+  padding: .8rem .8rem .4rem .8rem;
+}
+
+.content-item-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-bottom: .8rem;
+}
+
+.content-item-text {
+  padding-bottom: .8rem;
+  font-weight: 200;
+  color: #7d7d7d;
+}
+
+
+.thesis-exhibit {
+  width: 100%;
+  padding-bottom: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f3f5f5;
+}
+
+.thesis-exhibit h1 {
+  padding: 2.6rem 0rem 1.8rem 0rem;
+}
+
+.thesis-exhibit-content-container {
+  width: 100%;
+  display: flex;
+}
+
+.video-container {
+  width: auto;
+  flex-grow: 1;
+  padding: .8rem .8rem .8rem 1.2rem;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.video-container .content-item-title {
+  padding: 1.2rem 0;
+}
+
+.thesis-video-text {
+  color: #7d7d7d;
+  line-height: 1.4rem;
+}
+
+.thesis-side-item {
+  width: 21rem;
+  padding-left: .8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-left: 1px solid #D8D8D8;
+  transition: background-color 150ms ease-in 30ms;
+}
+
+.thesis-side-item:hover {
+  background-color: #D8D8D8
+}
+
+.thesis-side-item img {
+  width: 35%;
+  padding: .8rem .8rem .8rem 0;
+}
+
+.thesis-side-item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+
+footer {
+  padding: .8rem 1.2rem 1.6rem .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f5f5;
+  border-top: 1px solid #D8D8D8;
+}
+
+footer span {
+  font-size: .8rem;
+  color: #7d7d7d;
+}
+
+footer nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+footer nav a {
+  margin-left: 0.8rem;
+}
+
+/*#orientation-image {
+  content: url('../resources/images/information-orientation.jpg');
+}
+
+#campus-image {
+  content: url('../resources/images/information-campus.jpg');
+}
+
+#lecture-image {
+  content: url('../resources/images/information-guest-lecture.jpg');
+}*/
