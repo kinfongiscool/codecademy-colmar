@@ -27,12 +27,6 @@ span {
   margin: auto;
 }
 
-@media only screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
 header {
   width: 100%;
   height: 3.2rem;
@@ -184,16 +178,6 @@ header nav a:hover {
 
 .mobile-image {
   display: none;
-}
-
-@media only screen and (max-width: 480px) {
-  .normal-image {
-    display: none;
-  }
-
-  .mobile-image {
-    display: block;
-  }
 }
 
 .middle-content-side-item-text {
@@ -362,4 +346,155 @@ footer nav {
 
 footer nav a {
   margin-left: 0.8rem;
+}
+
+
+.header-mobile {
+  display: none;
+}
+
+.header-mobile-space {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  .full-width-display {
+    display: none;
+  }
+
+  header {
+    height: 4rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .header-mobile {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    transition: all 150ms ease-in 30ms;
+  }
+
+  .header-mobile-space {
+    display: block;
+    height: 11.25rem;
+    background-color: #9B9B9B
+  }
+
+  /*Sometimes (only sometimes) the mobile icons start off tiny and then grow to the correct size*/
+  .header-mobile a {
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-banner-content {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .normal-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
+  .middle-content-side-container {
+    width: 100%;
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .middle-content-side-item {
+    display: inline;
+    border-left: none;
+    margin-bottom: 1rem;
+  }
+
+  .middle-content-side-item-image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .mobile-image {
+    width: 100%;
+  }
+
+  .middle-content-side-item-text {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .start-learning-container {
+    padding-bottom: 1.2rem;
+    text-align: center;
+    background: #F4F5F5;
+    border-top: 1px solid #D8D8D8;
+  }
+
+  .start-learning-container h1 {
+    padding: 2rem;
+  }
+
+  .start-learning-item-container {
+    display: inline;
+    justify-content: center;
+    padding-bottom: 1.8rem;
+    margin: 0;
+  }
+
+  .start-learning-item {
+    width: auto;
+    background-color: #D8D8D8;
+    line-height: 1.2rem;
+    transition: all 150ms ease-in 30ms;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .start-learning-item:hover {
+    background-color: #9B9B9B;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .start-learning-item-text {
+    padding: 1rem;
+  }
+
+  .start-learning-item-text .content-item-title {
+    padding: 0;
+  }
+
+  .thesis-exhibit {
+    border-top: 1px solid #D8D8D8;
+  }
+
+  .thesis-exhibit h1 {
+    padding: 2rem;
+  }
+
+  .video-container {
+    width: auto;
+    padding: 0;
+  }
+
+  footer {
+    display
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
