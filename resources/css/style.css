@@ -134,6 +134,9 @@ header nav a {
 }
 
 .middle-content-side-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 21rem;
   padding: .8rem;
 }
@@ -145,17 +148,40 @@ header nav a {
 
 .middle-content-side-item-image {
   width: 35%;
-  height: auto;
 }
 
-#orientation-image {
-  background-image: url('Colmar/resources/images/information-orientation.jpg');
+.normal-image {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+
+}
+
+.mobile-image {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .normal-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+}
+
+
+
+/*#orientation-image {
+  content: url('../resources/images/information-orientation.jpg');
 }
 
 #campus-image {
-  content: url('Colmar/resources/images/information-campus.jpg');
+  content: url('../resources/images/information-campus.jpg');
 }
 
 #lecture-image {
-  content: url('Colmar/resources/images/information-guest-lecture.jpg');
-}
+  content: url('../resources/images/information-guest-lecture.jpg');
+}*/
