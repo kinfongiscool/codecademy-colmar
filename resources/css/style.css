@@ -89,6 +89,7 @@ header nav a {
 .top-banner-container {
   display: flex;
   align-items: center;
+  /*this padding needs to go somewhere else, because it's impacting the size of the img*/
   padding: 1.6rem 1.2rem;
   background-color: #D8D8D8;
 }
@@ -253,21 +254,22 @@ header nav a {
 .content-item-text {
   padding-bottom: .8rem;
   font-weight: 200;
-  color: #7d7d7d
+  color: #7d7d7d;
 }
 
 
 .thesis-exhibit {
   width: 100%;
+  padding-bottom: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f3f5f5
+  background-color: #f3f5f5;
 }
 
 .thesis-exhibit h1 {
-  padding: 2.6rem 0rem;
+  padding: 2.6rem 0rem 1.8rem 0rem;
 }
 
 .thesis-exhibit-content-container {
@@ -278,30 +280,73 @@ header nav a {
 .video-container {
   width: auto;
   flex-grow: 1;
-  padding: 0 1.2rem .8rem 1.2rem;
+  padding: .8rem .8rem .8rem 1.2rem;
 }
 
 video {
-  object-fit: fill;
+  width: 100%;
+  height: auto;
 }
 
-.thesis-side-item-container {
-  float: right;
+.video-container .content-item-title {
+  padding: 1.2rem 0;
+}
+
+.thesis-video-text {
+  color: #7d7d7d;
+  line-height: 1.4rem;
 }
 
 .thesis-side-item {
   width: 21rem;
+  padding-left: .8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  border-left: 1px solid #D8D8D8;
+  transition: background-color 150ms ease-in 30ms;
+}
+
+.thesis-side-item:hover {
+  background-color: #D8D8D8
+}
+
+.thesis-side-item img {
+  width: 35%;
+  padding: .8rem .8rem .8rem 0;
 }
 
 .thesis-side-item-text {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+}
+
+
+footer {
+  padding: .8rem 1.2rem 1.6rem .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f5f5;
+  border-top: 1px solid #D8D8D8;
+}
+
+footer span {
+  font-size: .8rem;
+  color: #7d7d7d;
+}
+
+footer nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+footer nav a {
+  margin-left: 0.8rem;
 }
 
 /*#orientation-image {
